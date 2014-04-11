@@ -12,5 +12,6 @@ class PagesController < ApplicationController
   end
 
   def download
+    send_file 'public/initiate_koans', :type=>"application/txt", :x_sendfile=>true
   end
 end
