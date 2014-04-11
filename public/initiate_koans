@@ -1,0 +1,9 @@
+!/bin/bash
+clear
+echo "Hi, $USER"
+git clone https://github.com/Vasyl92/rails.git
+cd rails
+git checkout test1
+clear
+echo "For  start and check the koans use . test_koans"
+sleep 3
