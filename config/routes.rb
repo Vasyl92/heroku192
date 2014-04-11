@@ -9,6 +9,13 @@ Heroku192::Application.routes.draw do
 
   get "pages/download"
 
+  # pages
+    match '/index', :to =>'pages#index'
+    match '/info', :to =>'pages#info'
+    match '/contact', :to =>'pages#contact'
+    match '/about', :to =>'pages#about'
+    match '/download', :to =>'pages#download'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
