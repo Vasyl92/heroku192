@@ -80,7 +80,7 @@ BODY {
 {       background: white;
         width: 20%;
         min-width: 110px;
-        font-size: 20px;
+        font-size: 18px;
         font-family: 'Times New Roman';
         margin-bottom: 40px;
         border-radius: 4px;
@@ -166,7 +166,7 @@ Bootstrap
   text-decoration: none;
   background-color: #200;
   color:white;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'TimesNewRoman';
 }
 
@@ -189,7 +189,7 @@ Bootstrap
 
 .nav-list > li > a,
 .nav-list .nav-header {
-  font-size: 16px;
+  font-size: 12px;
   
 
   margin-right: -15px;
@@ -202,7 +202,7 @@ Bootstrap
     cursor: auto;
     display: block;
     font-family: 'TimesNewRoman';
-    font-size: 20px;
+    font-size: 18px;
     padding: 3px 15px;
     text-decoration: none;
     text-shadow: rgba(255, 255, 255, 0.498039) 0px 1px 0px;
