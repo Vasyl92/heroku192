@@ -57,9 +57,9 @@ BODY {
         background: url(rails.jpg)  no-repeat   left top;
         font-family: 'Times New Roman';
         color: #200;
-        padding-top: 10px;
+        padding-top: 32px;
         min-width: 510px;
-        height: 259px;
+        height: 229px;
         margin-top: 40px;
         margin-bottom: 40px;  
         border-radius: 4px;
@@ -67,7 +67,7 @@ BODY {
         border-width: thin;
         padding-left: 475px;
         padding-right: 10px;
-        font-size: 38px;
+        font-size: 24px;
 }
 #container
 {
@@ -80,7 +80,8 @@ BODY {
 {       background: white;
         width: 20%;
         min-width: 110px;
-        
+        font-size: 20px;
+        font-family: 'Times New Roman';
         margin-bottom: 40px;
         border-radius: 4px;
         border-style: solid;
@@ -102,7 +103,7 @@ border-top-color: #AAA;
 border-top-style: solid;
 border-top-width: 1px;
 color: #DDD;
-font-family: TimesNewRoman;
+font-family: 'Times New Roman';
 font-size: 14px;
 font-style: normal;
 font-variant: normal;
@@ -142,10 +143,12 @@ Bootstrap
 .nav {
   margin-bottom: 20px;
   list-style: none;
+
 }
 
 .nav > li > a {
   display: block;
+
 
 }
 
@@ -153,6 +156,9 @@ Bootstrap
 {
     background-color: none;
     color:black;
+
+
+
 }
 
 .nav > li > a:hover,
@@ -160,6 +166,8 @@ Bootstrap
   text-decoration: none;
   background-color: #200;
   color:white;
+  font-size: 20px;
+  font-family: 'TimesNewRoman';
 }
 
 .nav-header {
@@ -176,10 +184,14 @@ Bootstrap
   padding-right: 15px;
   padding-left: 15px;
   margin-bottom: 20px;
+
 }
 
 .nav-list > li > a,
 .nav-list .nav-header {
+  font-size: 16px;
+  
+
   margin-right: -15px;
   margin-left: -15px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
@@ -189,8 +201,8 @@ Bootstrap
     color: #06C;
     cursor: auto;
     display: block;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-family: 'TimesNewRoman';
+    font-size: 20px;
     padding: 3px 15px;
     text-decoration: none;
     text-shadow: rgba(255, 255, 255, 0.498039) 0px 1px 0px;
@@ -887,9 +899,9 @@ input[type="submit"].btn.btn-mini {
 
 
 sruft{
-      font-family: 'PT Sans', Georgia, 'Times New Roman', serif;
+      font-family: 'Times New Roman';
       font-size: 20px;
-      font-style: italic;
+     /* font-style: italic;*/
       font-variant: normal;
       font-weight: normal;
       
@@ -904,12 +916,12 @@ sruft{
         min-height: 950px;
         margin-top: 0px;
         margin-bottom: 50px;
-        
+        font-size: 20px;
+        font-family: 'Times New Roman';
         margin-left: 260px;
         border-style: solid;
         border-radius: 4px;
         border-width: thin; 
-        padding: 10px;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -924,3 +936,14 @@ sruft{
  *= require_self
  *= require_tree .
  */
+
+zagolovok1{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-size: 24px; 
+    min-width: 600px;
+    min-width: 600px;
+    color: #200;
+    }
