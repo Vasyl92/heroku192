@@ -6,27 +6,51 @@
 2) Встановити root(коренева сторінка) pages/index.html.erb<br>
    it "You should change root " do<br>
    <br>
-3) Написати шлях до сторінки about/index.html.erb<br>
-	it "You should write about_path " do<br>
+3) Написати шлях під іменем about_path до сторінки about/index.html.erb <br>
+	it "You should write match to view pages/about use name about_path" do<br>
 	<br>
-4) Написати шляхи до сторінок info/index.html.erb contact/index.html.erb<br>
-	it "You should write info_path and contact_path" do<br>
+4) Написати шлях під іменем contact_path,info_path до сторінки info/index.html.erb contact/index.html.erb <br>
+	it "You should write match to view info/index.html.erb contact/index.html.erb use contact_path,info_path" do<br>
 	<br>
-5) Створити гіперпосилання link 'About' to about_path "<br>
+5) Створити гіперпосилання link 'About' to about_path розмістити pages/index.html.erb<br>
 	it "You should  create link 'About' to about_path " do<br>
 	<br>
-6) Створити гіперпосилання link 'Index','Info','Contact' to about_path,info_path,contact_path "<br>
-	it "You should  create link 'Index','Info','Contact' to about_path,info_path,contact_path " do<br>
+6) Створити гіперпосилання link 'Index' 'Info' 'Contact' to root_path, info_path, contact_path розмістити pages/index.html.erb <br>
+	 it "You should  create link 'Index','Info','Contact' to about_path,info_path,contact_path " do<br>
 	<br>
-7) Сворити частвовий шаблон partial в application.html.erb<br>
-	it "You should  create partial containing all links and put them into application.html.erb " do<br>
+7) Створити файл _menu.html.erb в ayouts/partials і перемістити всі посилання із кореневої сторінки. Підключити partial application.html.erb<br>
+	it "You should create create file(_menu.html.erb) in layouts/partials containing all links and inlude partial in application.html.erb " do<br>
 	<br>
-8) Підключити стиль my_css.css і підключити тег <top_menu>AllLink<top_menu/><br>
-	it "You should  create include my_css.css style and add to the partials tag <top_menu>AllLink<top_menu/> " do<br>
+8) Підключення файлу стилів my.css і використати стиль zagolovok для всіх гіперпосиланнь в _menu.html.erb<br>
+	it "You should  create include my_css.css style and add use style zagolovok for all links in _menu.html.erb " do<br>
 	<br>
-9) Використати class zagolovok до гіперпосиланнь які розміщені в top_menu selector<br>
-   it " You should use class zagolovok to link in top_menu selector" do<br>
+9) Підключення div#top_menu  для всіх гіперпосиланнь в _menu.html.erb<br>
+   it "You should  put content of _menu.html.erb into div#top_menu" do<br>
    <br>
-10) Сворити зображення використавши Rails.png<br>
- it " You should put an image use Rails.png" do<br>
+10) Змініть назву заголовку на RoRkoans | Index в root<br>
+ it "should have the right title RoRkoans | Index in pages#index" do<br>
+ <br>
+ 11) Витріть вміст контенту pages#about і розмістіть там зображення<br>
+ it " You should use Rails.png to put an image in the view " do<br>
+ <br>
+ 12) Створення моделі User, generate model User name:string email:string and run bundle exec rake db:test:prepare<br>
+ it "Generate model User name:string email:string " do<br>
+ <br>
+ 13) Створення валідаторів наявності на поля name:string email:string<br>
+ it "You should add validators of presence: true for name" do<br>
+ <br>
+ 14) Створення валідаторів довжини не більше 51 символа для поля name<br>
+ it "You should add length validator 51 symbols for field name" do<br>
+ <br>
+ 15) Створення валідаторів формату поля email<br>
+ it " You should add format validator for field email " do<br>
+ <br>
+ 16) Валидация унікальності щоб не збереглися однакові користувачі<br>
+ it "You should add validators of uniqueness for field name" do<br>
+ <br>
+ 17) Валидация чутливості до регістру поля email<br>
+ it "You should add validators of case_sensitive for field email" do<br>
+ <br>
+ 18) Пароль<br>
+ it "Parol" do<br>
  <br>
