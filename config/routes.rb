@@ -1,4 +1,14 @@
 Heroku192::Application.routes.draw do
+  get "others/testing"
+
+  get "others/code"
+
+  get "others/developers"
+
+  get "others/source"
+
+  get "others/addinfo"
+
   get "rortester/instruction"
 
   get "rortester/answers"
@@ -25,6 +35,12 @@ Heroku192::Application.routes.draw do
   match '/instruction', :to =>'rortester#instruction'
   match '/answers', :to =>'rortester#answers'
   match '/tasks', :to =>'rortester#tasks'
+  # others
+  match '/testing', :to =>'others#testing'
+  match '/code', :to =>'others#code'
+  match '/developers', :to =>'others#developers'
+  match '/source', :to =>'others#source'
+  match '/addinfo', :to =>'others#addinfo'
     
 
   # The priority is based upon order of creation:

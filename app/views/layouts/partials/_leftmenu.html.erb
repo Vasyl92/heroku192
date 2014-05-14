@@ -1,3 +1,4 @@
+<div id="container">
 <div class="left_menu"> 
 		<ul class="nav nav-list">
               <li class="nav-header">Головне меню</li>
@@ -9,12 +10,13 @@
               <li><%= link_to_unless_current " Інструкція користувача ",instruction_path %></li>
               <li><%= link_to_unless_current " Завдання ",tasks_path %></li>
               <li><%= link_to_unless_current " Розв'язки ",answers_path %></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Тестування</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Програмний код</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Tutorial Rails</a></li>
+              <li><%= link_to_unless_current " Тестування",testing_path %></li>
+              <li><%= link_to_unless_current " Програмний код",code_path %></li>
+              <li><a href="http://railstutorial.ru/chapters/4_0/beginning">Rails tutorial</a></li>
               <li class="nav-header">Тестування</li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Розробники</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Корисні джерела</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Додаткова інформація</a></li>
+              <li><%= link_to_unless_current " Розробники ",developers_path %></li>
+              <li><%= link_to_unless_current " Корисні джерела ",source_path %></li>
+              <li><%= link_to_unless_current " Додаткова інформація ",addinfo_path %></li>
             </ul>
         </div>
+<div class="main">
