@@ -7,58 +7,35 @@
   <%= csrf_meta_tags %>
   <%= favicon_link_tag 'logo1.png' %>
 </head>
+
 <body>
 	<div id=top_menu>
+
 			<div class="zagolovok">
 	         <zagolovok><%= link_to_unless_current " Головна сторінка ",root_path %><%= link_to_unless_current " Про сайт ",about_path %><%= link_to_unless_current " Контакти ",contact_path %><%= link_to_unless_current " Інформація ",info_path %></zagolovok>
-	    	</div>
-		</div>
+	    </div>       
+	</div>
 
 
 	<div id="wrapper">
+
 		<div id="headline">
-		<logo> Тестувальна програма для вивчення  фреймворку Ruby on Rails </logo>
+
+		    <logo> Тестувальна програма для вивчення  фреймворку Ruby on Rails </logo>
 		</div>
+
 		<hr color=black>
-		<div id="banner">
-      <i>RoRkoans</i><sruft> - програма розроблена для ознайомлення із фреймворком Ruby on Rails. Мета програми заключається у тому, щоб вивчити мову Ruby on Rails, синтаксис,структуру і деякі загальновживані функції і бібліотеки.
-      <br>
-      <hr>
-      <%= link_to "Завантажити файл >>>", download_path, class: 'btn btn-primary btn-large' %>
-      </sruft>
-		</div>	
-		<div id="container">
-
-			 <div class="left_menu"> 
-		<ul class="nav nav-list">
-              <li class="nav-header">Головне меню</li>
-              <li class="active"><%= link_to_unless_current " Головна сторінка ",root_path %></li>
-              <li><%= link_to_unless_current " Про сайт ",about_path %></li>
-              <li><%= link_to_unless_current " Контакти ",contact_path %></li>
-              <li><%= link_to_unless_current " Інформація ",info_path %></li>
-              <li class="nav-header">RoRtester</li>
-              <li><%= link_to_unless_current " Інструкція користувача ",instruction_path %></li>
-              <li><%= link_to_unless_current " Завдання ",tasks_path %></li>
-              <li><%= link_to_unless_current " Розв'язки ",answers_path %></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Тестування</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Програмний код</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Tutorial Rails</a></li>
-              <li class="nav-header">Тестування</li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Розробники</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Корисні джерела</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Додаткова інформація</a></li>
-            </ul>
+		
+              <%= yield %>
+              
         </div>
-        
-        <div class="main">
 
-<%= yield %>
-</div>
-
-</div>
+    </div>
 	</div>
+
 	<div id="footer">
 		© Copyright April 2014 <br> Created by Germanskij Vasyl
 	</div>
+
 </body>
 </html>
