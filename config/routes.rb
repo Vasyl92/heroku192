@@ -24,6 +24,7 @@ Heroku192::Application.routes.draw do
   get "pages/info"
 
   get "pages/download"
+  get "pages/download1"
 
   # pages
     match '/index', :to =>'pages#index'
@@ -31,6 +32,7 @@ Heroku192::Application.routes.draw do
     match '/contact', :to =>'pages#contact'
     match '/about', :to =>'pages#about'
     match '/download', :to =>'pages#download'
+    match '/download1', :to =>'pages#download1'
   # rortester
   match '/instruction', :to =>'rortester#instruction'
   match '/answers', :to =>'rortester#answers'
