@@ -2,7 +2,7 @@
 clear
 echo "Hi, $USER"
 git clone https://github.com/Vasyl92/rorkoans.git
-cd rails
+cd rorkoans
 git checkout test1
 clear
 echo "For  start and check the koans use . test_koans"
